@@ -1,0 +1,286 @@
+.ground-menu {
+  width: 270px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 103;
+  height: 100%;
+  left: 0;
+  top: 70px;
+  transition: 0.3s ease-in-out;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  box-shadow: 0 16px 17px -12px #00000054, 0 4px 25px 0 #0000001f,
+    0 8px 10px -5px #f3f3f3;
+}
+
+.ground-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: 5px solid #e8dfec;
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.ground-menu::-webkit-scrollbar {
+  width: 7px;
+  display: none;
+}
+.ground-menu:hover::-webkit-scrollbar {
+  display: block;
+}
+.ground-menu:hover::-webkit-scrollbar-thumb {
+  background: #06c1d4;
+}
+/* --------------login-sin---------------- */
+.ground-menu .nav-toggle .login-sin {
+  display: grid;
+  position: absolute;
+  margin-top: 28px;
+  width: 100%;
+  padding: 0 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  transition: 0.3s ease-in-out;
+}
+.ground-menu .nav-toggle .login-sin a {
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 37px;
+  color: #fdf9ff;
+  border-radius: 3px;
+  background-color: #302e4d;
+  font-weight: 450;
+  line-height: 37px;
+}
+
+/*--------------------nav-toggle--------------------*/
+.ground-menu .nav-toggle {
+  position: fixed;
+  display: flex;
+  z-index: 16;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 5px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+.ground-menu .nav-toggle i.fa-times {
+  cursor: pointer;
+  color: red;
+}
+.ground-menu.open {
+  left: 0;
+}
+.ground-menu.open .nav-toggle {
+  opacity: 1;
+  left: 280px;
+  visibility: visible;
+}
+/*--------------------------------Menu-------------------------------- */
+.ground-menu nav .menu {
+  z-index: 10;
+  padding: 15px 15px 25px 20px;
+  position: relative;
+}
+.ground-menu nav .menu li {
+  display: block;
+}
+.ground-menu nav .menu > li {
+  animation: slider_menu 0.2s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
+}
+@keyframes slider_menu {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.ground-menu nav .menu > li > a {
+  font-size: 16px;
+  padding: 5px 0;
+  font-weight: 500;
+  position: relative;
+  text-transform: capitalize;
+  color: #4a5568;
+  line-height: 45px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: flex;
+  padding-left: 70px;
+  align-items: center;
+}
+
+.ground-menu nav .menu > li > a .icon-menu img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ground-menu nav .menu > li > a .icon-menu span {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+}
+.ground-menu nav .menu li:hover a i.fa-caret-down {
+  color: #1890ff;
+  transition: 0.1s ease-in-out;
+}
+.ground-menu nav .menu li a i.fa-caret-down {
+  position: absolute;
+  right: 5px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  color: #4a5568;
+}
+.ground-menu nav .menu li a.active {
+  color: #1890ff;
+  font-weight: 550;
+  padding: 0;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.ground-menu nav .menu li a.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 3%;
+  background-color: #1890ff;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.ground-menu nav .menu > li:hover > a:not(.active) {
+  color: #1890ff;
+}
+
+.ground-menu nav .menu li a .fa {
+  margin-right: 5px;
+  width: 15px;
+  text-align: center;
+  font-size: 1.2em;
+}
+/*--------------------------------Sub Menu-------------------------------- */
+.sub-menu {
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  max-height: 0px;
+  background: #ffff;
+}
+.ground-menu nav > .menu > li.active-menu {
+  padding: 5px 0;
+}
+
+.ground-menu nav > .menu > li.active-menu:hover > a {
+  background-color: #d4f1ff;
+  border-radius: 8px;
+}
+.ground-menu nav > .menu > li.active-menu.open .sub-menu {
+  max-height: 100vh;
+  transition: 0.5s ease-in-out;
+}
+.ground-menu nav > .menu > li.active-menu.open a i.fa-caret-down {
+  transform: rotate(-180deg);
+  color: #1890ff;
+}
+
+.ground-menu nav > .menu > li.active-menu.open > a {
+  color: #1890ff !important;
+  transition: all 0.3s ease-out;
+  position: relative;
+  background-color: #d4f1ff;
+  border-radius: 8px;
+}
+
+.sub-menu > li > a {
+  padding: 5px 0px 5px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  text-transform: capitalize;
+  color: #585f6b;
+  line-height: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: block;
+}
+.sub-menu > li:last-child {
+  border-bottom: none;
+}
+.sub-menu > li > a:hover {
+  /* text-decoration: underline; */
+  transform: translateX(10px);
+  border-radius: 8px;
+  color: #ec1839;
+}
+
+/*----------------copyright----------------*/
+.ground-menu .copyright-text {
+  font-size: 13px;
+  color: #7d7d7d;
+  text-align: center;
+}
+/* ----------------Responsive ----------- */
+@media screen and (max-width: 1000px) {
+  .ground-menu nav > .menu > li.active-menu:hover > a {
+    background: none;
+  }
+  .ground-menu nav > .menu > li.active-menu.open > a {
+    background: #d4f1ff;
+  }
+  .ground-menu nav .menu {
+    padding: 15px 15px 0px 20px;
+  }
+  .sub-menu > li > a {
+    font-weight: 400;
+  }
+  .ground-menu:hover::-webkit-scrollbar {
+    display: none;
+  }
+  .ground-menu .nav-toggle a.logo {
+    display: block;
+  }
+  .ground-menu nav .menu > li:hover > a:not(.active) {
+    color: #302e4d;
+  }
+  .ground-menu {
+    left: -300px;
+    top: 0;
+  }
+
+  .ground-menu .nav-toggle .login-sin {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .toggle-menu {
+    display: block !important;
+    grid-row: 1/3;
+    cursor: pointer;
+  }
+  .toggle-menu i {
+    font-size: 23px;
+    color: #ffff;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}

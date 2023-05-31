@@ -1,0 +1,27 @@
+/*------------------card user------------------*/
+.ground-card {
+  display: block;
+  position: relative;
+  align-self: center;
+}
+
+.ground-card .main-card .length-cart {
+  position: relative;
+}
+
+.ground-card .main-card .length-cart .icon-cart {
+  font-size: 1.4em;
+  color: #fff;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .ground-card {
+    margin: auto;
+  }
+}

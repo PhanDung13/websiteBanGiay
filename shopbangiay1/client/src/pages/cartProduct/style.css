@@ -1,0 +1,334 @@
+.container-card {
+  display: block;
+}
+.group-nofuound path {
+  stroke: none;
+  stroke-width: 3px;
+}
+.container-card .group-card {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  min-height: 50vh;
+  box-shadow: 0 1px 6px rgb(239, 233, 242);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #ffff;
+  border-radius: 8px;
+}
+.container-card .group-card .no-data-cart {
+  text-align: center;
+}
+.container-card .group-card .no-data-cart a {
+  color: rgb(74, 74, 74);
+  font-weight: 500;
+  background: rgb(253, 216, 53);
+  border: 1px solid rgb(253, 216, 53);
+  display: inline-block;
+  padding: 5px 30px;
+  width: 220px;
+  border-radius: 4px;
+  text-align: center;
+  margin: auto;
+}
+.container-card .group-card .no-data-cart h3 {
+  font-size: 16px;
+  color: rgb(89 89 89);
+}
+.container-card .group-card h3 {
+  color: #4a5568;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.container-card .group-card h3 span {
+  color: rgb(181, 178, 178);
+  font-size: 16px;
+}
+.container-card .group-card .group-card-item {
+  display: grid;
+  position: relative;
+  grid-template-columns: 70% 25%;
+  grid-column-gap: 10px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+/*-----------Card Iteml------------ */
+.group-phone .ant-input-number {
+  width: 100%;
+}
+.ant-form-item .ant-input-number-handler-wrap {
+  display: none !important;
+}
+.group-card .group-card-item .card-items {
+  display: grid;
+  padding: 80px 0;
+  justify-items: center;
+  grid-template-columns: 25% 40% 15% 20%;
+  border-bottom: 1px solid #e2e2e2;
+  position: relative;
+  grid-row-gap: 50px;
+}
+.group-card-item .card-items .total-sum {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  color: #1e90ff;
+  font-size: 1em;
+  font-weight: 550;
+}
+.group-card .group-card-item .card-items:last-child {
+  border-bottom: none;
+}
+
+.group-card .group-card-item .frames-card-item {
+  box-shadow: 0 1px 6px rgb(239, 233, 242);
+  border: 2px solid rgb(239, 233, 242);
+  border-radius: 8px;
+}
+.frames-card-item button.delete-item {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border: none;
+  background: none;
+  z-index: 70;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.frames-card-item button.delete-item i {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+}
+.group-card-item .card-items .card-image {
+  position: relative;
+  width: 120px;
+  height: auto;
+}
+.group-card-item .card-items .card-image img {
+  position: relative;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+/* ----------------price-------------- */
+.group-card-item .card-items .card-rice {
+  text-align: center;
+}
+.group-card-item .card-items .card-rice p {
+  color: #ec1839;
+  font-size: 1.1em;
+  display: block;
+  font-weight: 550;
+  position: relative;
+}
+.group-card-item .card-items .card-name p::first-letter {
+  text-transform: capitalize;
+}
+.group-card-item .card-items .card-name p {
+  font-size: 1em;
+  color: #4a5568;
+  font-weight: 550;
+  padding: 0 10px;
+  display: block;
+  transition: 0.3s ease-out;
+  margin-bottom: 10px;
+}
+.group-card-item .card-items .card-name p span {
+  color: #2659c8;
+  font-size: 0.9em;
+}
+.group-card-item .card-items .card-name p:hover {
+  text-decoration: underline;
+}
+/* -------quantity-------------------- */
+.frames-card-item .card-items .card-quantity {
+  text-align: center;
+}
+.card-items .card-rice span,
+.card-items .card-quantity span {
+  font-size: 1em;
+  margin-bottom: 10px;
+  display: block;
+  color: rgb(48, 48, 48);
+  font-weight: 550;
+}
+.gruop-information-detail .group-buys-detail .card-quantity {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  align-items: center;
+}
+.card-quantity .quantity-number button {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 550;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 236, 236);
+  color: black;
+  transition: 0.1s ease-out;
+}
+.card-quantity .quantity-number {
+  display: flex;
+}
+.card-quantity .quantity-number div {
+  width: 40px;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  border-top: 1px solid rgb(236, 236, 236);
+  font-size: 14px;
+  color: rgb(23, 23, 23);
+}
+
+.card-quantity .quantity-number button.click-left {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.card-quantity .quantity-number button.click-right {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.card-quantity .quantity-number button:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+/* ---------card-total-money----------*/
+.card-total-money {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgb(239, 233, 242);
+  border: 1px solid rgb(239, 233, 242);
+  height: 283px;
+  top: 80px;
+  position: sticky;
+  text-align: center;
+}
+.card-total-money .total-money h3 {
+  color: rgb(51, 51, 51);
+  font-size: 1.2em;
+  font-weight: 550;
+  padding: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 1px solid #e2e2e2;
+}
+.card-total-money .total-money .group-total-money {
+  text-align: center;
+}
+.total-money .group-total-money p {
+  color: rgb(254, 56, 52);
+  font-weight: 550;
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.total-money .group-total-money span {
+  color: rgb(51, 51, 51);
+  font-size: 0.8em;
+}
+
+.card-total-money button {
+  color: rgb(255, 255, 255);
+  display: block;
+  cursor: pointer;
+  background: rgb(255, 66, 78);
+  padding: 10px 15px;
+  border-radius: 4px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  margin: 20px auto;
+  transition: 0.4s ease-out;
+  font-size: 1em;
+}
+.card-total-money button:hover {
+  background: red;
+}
+.btn-register {
+  width: 100%;
+}
+
+/*--------------Respensive--------------*/
+@media screen and (max-width: 1000px) {
+  .container-card .group-card {
+    padding: 20px 10px;
+  }
+  .container-card {
+    padding-left: 0px;
+  }
+  .container-card .group-card .group-card-item {
+    grid-template-columns: 100%;
+  }
+  .card-total-money {
+    margin-top: 20px;
+  }
+  .card-total-money .total-money h3 {
+    text-align: left;
+  }
+  .card-total-money .total-money .group-total-money {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .card-total-money button {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .group-card .group-card-item .card-items {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    grid-row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .container-checkout .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .group-card-item .card-items .card-name p {
+    font-size: 1em;
+  }
+  .frames-card-item button.delete-item {
+    top: 0;
+    left: 0;
+  }
+  .total-money .group-total-money p {
+    font-size: 1.2em;
+  }
+  .container-card .group-card h3,
+  .card-total-money .total-money h3 {
+    font-size: 1em;
+  }
+  .group-card .group-card-item .card-items {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .group-card-item .card-items .card-rice p,
+  .card-items .card-rice span,
+  .card-items .card-quantity span {
+    font-size: 0.9em;
+  }
+  .group-card-item .card-items .card-name p {
+    font-size: 0.9em;
+  }
+  .group-card-item .card-items .total-sum {
+    font-size: 0.8em;
+  }
+  .frames-card-item button.delete-item {
+    top: -5px;
+    left: -5px;
+  }
+}

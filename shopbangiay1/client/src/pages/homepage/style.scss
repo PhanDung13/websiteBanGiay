@@ -1,0 +1,22 @@
+.group-home .home {
+  background-color: #f3f2ef;
+}
+.banner-container {
+  box-sizing: border-box;
+  padding-top: 40px;
+  .adv_bottom_inner {
+    .img_effect {
+      background: rgba(255, 255, 255, 0.5);
+      overflow: hidden;
+      img {
+        transition: all 0.3s ease-in-out;
+        max-width: 100%;
+        display: block;
+        &:hover {
+          transform: scale(1.05);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

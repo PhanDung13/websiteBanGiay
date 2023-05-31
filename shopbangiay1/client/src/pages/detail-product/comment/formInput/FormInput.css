@@ -1,0 +1,14 @@
+.form_input{
+    margin: 10px 0;
+}
+.form_input input{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    min-height: 40px;
+    outline: none;
+}
+.gui-action{
+    margin-top: 10px;
+}

@@ -1,0 +1,128 @@
+.messenger {
+  height: calc(100vh - 70px);
+  display: flex;
+  background-color:var(--sidebar-color);
+  border-radius: 10px;
+}
+
+.chatMenu {
+  flex: 3.5;
+  border-right: 2px solid #f0f0f0;
+}
+.chatBox .title{
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 10px;
+  border-bottom: 2px solid rgb(202, 199, 199);
+}
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid rgb(79, 76, 76);
+}
+
+.chatBox {
+  flex: 5.5;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(14, 17, 89);
+  color: white;
+}
+
+.chatOnline {
+  flex: 3;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: calc(100% - 70px);
+}
+.chatMenuWrapper .search-chat input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f0f0f0;
+}
+.chatMenuWrapper .search-chat button {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(14, 17, 89);
+  color: white;
+}
+.chatMenuWrapper .search-chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .chatMenu {
+    flex: 1;
+  }
+
+  .chatMenuInput {
+    display: none;
+  }
+
+  .chatBox {
+    flex: 10;
+  }
+
+  .chatOnline {
+    flex: 1px;
+  }
+}

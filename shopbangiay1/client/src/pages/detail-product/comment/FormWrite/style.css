@@ -1,0 +1,54 @@
+.group-form-comment {
+	border-radius: 8px;
+	padding: 10px 40px;
+	box-shadow: 0 1px 6px rgb(239, 233, 242);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: #ffff;
+	margin-top: 20px;
+}
+.group-form-comment .from-write {
+	border-radius: 8px;
+}
+
+.group-form-comment .group-length-content {
+	position: relative;
+	text-align: right;
+}
+.group-form-comment .group-length-content p {
+	font-size: 14px;
+	color: rgb(181, 178, 178);
+	margin-bottom: 0;
+}
+.group-form-comment .group-length-content .input-content {
+	min-height: 120px;
+	outline: none;
+	padding: 5px 10px;
+	border: 1px solid #d9d9d9;
+	text-align: left;
+	border-radius: 4px;
+}
+.group-form-comment .group-length-content button {
+	margin: 10px 0;
+	display: block;
+	text-align: left;
+}
+.group-form-comment .ant-comment-nested {
+	margin-left: 0 !important;
+}
+.group-comment .container-comment .ant-avatar {
+	width: 50px;
+	height: 50px;
+}
+.group-comment .container-comment .ant-comment-avatar img {
+	width: 50px;
+	height: 50px;
+}
+.form_input p{
+	color: #242424;
+	font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+	.group-form-comment {
+		margin: 0 10px;
+	}
+}

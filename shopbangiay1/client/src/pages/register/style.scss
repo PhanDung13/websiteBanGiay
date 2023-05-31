@@ -1,0 +1,93 @@
+.group-register {
+  position: relative;
+  display: flex;
+  background-image: url("login.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.group-register .main-register {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.group-register .main-register .container-register {
+  max-width: 450px;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  background: #ffff;
+  padding: 60px 30px 20px 30px;
+  box-shadow: 0 0 1px 0 #c850c0, 0 16px 16px -1px #4158d0;
+}
+.main-register .container-register .form-register .ant-form-item-label {
+  padding: 0;
+}
+.main-register .container-register .form-register .ant-form-item {
+  margin-bottom: 10px;
+}
+.group-register .main-register .container-register .btn-register {
+  font-size: 1em;
+  color: #ffff;
+  background: #05042c;
+  padding: 5px 18px;
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+}
+.group-register .main-register .container-register h3 {
+  color: rgb(51, 51, 51);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06),
+    0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  padding: 10px 50px;
+  background: #ffff;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.container-register .form-register .height-min {
+  height: 40px;
+}
+.group-register .main-register .group-register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-register .container-register .connect-link {
+  text-align: center;
+  margin: 15px 0;
+}
+.main-register .container-register .connect-link p {
+  color: #a9a9a9;
+  display: inline;
+  /* padding-right: 10px; */
+  font-size: 15px;
+}
+.main-register .container-register .connect-link a {
+  font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+  .group-register {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .group-register .main-register .container-register {
+    padding: 100px 15px 40px 15px;
+  }
+  .main-register .container-register .connect-link p {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .group-register .main-register {
+    padding: 0 10px;
+  }
+  .group-register .main-register .container-register h3 {
+    font-size: 1.2em;
+  }
+}

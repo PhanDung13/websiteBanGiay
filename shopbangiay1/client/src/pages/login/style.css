@@ -1,0 +1,150 @@
+.group-login {
+  position: relative;
+  display: flex;
+  background-image: url("login.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.group-login .main-login {
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.group-login .main-login .container-login {
+  max-width: 450px;
+  margin: auto;
+  box-shadow: 0 0 1px 0 #c850c0, 0 16px 16px -1px #4158d0;
+  padding: 60px 30px 10px 30px;
+  border-radius: 10px;
+  background: #ffff;
+  position: relative;
+}
+.main-login .container-login .input-email .ant-input-affix-wrapper,
+.main-login .container-login .input-password .ant-input-affix-wrapper {
+  height: 40px;
+}
+.main-login .container-login .login-form .ant-form-item-label {
+  padding: 0;
+}
+.main-login .container-login .login-form .ant-form-item {
+  margin-bottom: 10px;
+}
+.group-login .main-login .container-login h3 {
+  color: rgb(51, 51, 51);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06),
+    0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  padding: 10px 30px;
+  background: #ffff;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+/* connect   with internet */
+.main-login .container-login .connect-with-internet {
+  margin: 10px auto;
+  text-align: center;
+}
+.container-login .connect-with-internet .btn-google-login path {
+  stroke: none;
+}
+.container-login .connect-with-internet .btn-google-login {
+  width: 50px;
+  height: 50px;
+  border-radius: 50% !important;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  border: none !important;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%) !important;
+}
+
+.container-login .connect-with-internet .btn-google-login span {
+  padding: 0 !important;
+}
+.container-login .connect-with-internet .btn-google-login div {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  top: 2px;
+  background: none !important;
+}
+.container-login .connect-with-internet p {
+  color: #a9a9a9;
+  font-size: 15px;
+}
+.main-login .container-login .forgot-password {
+  text-align: center;
+}
+.main-login .container-login .forgot-password p {
+  font-size: 15px;
+  color: #ff6e70;
+  cursor: pointer;
+}
+.main-login .container-login .connect-link {
+  padding: 10px 0;
+  text-align: center;
+}
+.main-login .container-login .connect-link p {
+  color: #a9a9a9;
+  display: inline;
+  font-size: 15px;
+}
+.main-login .container-login .connect-link a {
+  font-size: 15px;
+}
+.group-login .main-login .group-login-link {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+.group-login .main-login .group-login-link .ant-form-item {
+  margin-bottom: 0;
+}
+.group-login .main-login .group-login-link .btn-login {
+  font-size: 1em;
+  color: #ffff;
+  background: #05042c;
+  padding: 5px 18px;
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+}
+.group-login .main-login .group-login-link .btn-register {
+  display: block;
+  position: relative;
+  justify-self: center;
+  font-size: 1em;
+  line-height: 35px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .group-login {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .group-login .main-login .container-login {
+    padding: 100px 15px 40px 15px;
+  }
+  .group-login .main-login {
+    padding: 0 10px;
+  }
+  .main-login .container-login .connect-link p {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .group-login .main-login .container-login h3 {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,67 @@
+.dashboard-container {
+  .card {
+    background-color: #ffffff;
+    color: #3a3541de;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 6px;
+    background-image: none;
+    overflow: hidden;
+    box-shadow: #3a35411a 0px 2px 10px 0px;
+    padding: 1.25rem;
+    .card-body {
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        i {
+          font-size: 25px;
+          color: #7571f9;
+        }
+        .anticon-ant-design{
+          color: #7571f9;
+        }
+      }
+      .content {
+        margin-left: 15px;
+        p {
+          margin: 0px;
+        }
+        .number {
+          margin: 0px;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .total-revenue {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: #3a35411a 0px 2px 10px 0px;
+    border-radius: 5px;
+    .box1 {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    h3 {
+      margin: 0;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      letter-spacing: 0.0075em;
+      margin-bottom: 0.35em;
+      color: #4a5568;
+    }
+    canvas {
+      height: 510px !important;
+    }
+  }
+}

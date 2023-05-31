@@ -1,0 +1,103 @@
+.group-information {
+  display: flex;
+  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // .information-name {
+  //   display: flex;
+  //   align-items: center;;
+  margin-top: 24px;
+  // }
+  width: 100%;
+
+  &-content {
+    font-size: 15px;
+    padding-right: 24px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
+    a {
+      color: #000000d9;
+      font-size: 15px;
+    }
+  }
+  .btn-logout {
+    color: #ec1839;
+  }
+  .logout {
+    background: none;
+    outline: none;
+    border: none;
+    color: #ec1839;
+    cursor: pointer;
+  }
+}
+.change-information {
+  margin-top: 24px;
+}
+
+.information .group-avatar {
+  text-align: center;
+}
+.information .group-avatar img {
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  box-shadow: 0 0 1px 0 rgba(198, 218, 239, 0.06),
+    0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  border: 1px solid #f7f8f9;
+}
+.create-account {
+  text-align: center;
+  span {
+    color: rgba(153, 153, 153, 0.4);
+    font-weight: 400;
+    font-size: 1em;
+    padding: 5px 2px;
+    text-transform: capitalize;
+  }
+}
+.group-upload-image {
+  margin: 20px auto;
+}
+.avatar-user {
+  width: 30px;
+  height: 30px;
+}
+.avatar-user img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+.boder-none {
+  border: none;
+  background-color: #fff !important;
+  color: #000000d9 !important;
+}
+
+.group-infor2 {
+  color: #000000d9;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  input {
+    font-size: 15px;
+    width: 260px;
+  }
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.icon-user-information {
+  font-size: 15px;
+  min-width: 30px;
+}
+.group-information1 {
+  .ant-form-item-explain-error {
+    margin-left: 30px !important;
+  }
+}
